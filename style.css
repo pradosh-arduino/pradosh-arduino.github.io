@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'SourceCodePro-Italics'; /* Give your font a name */
+    src: url('./fonts/SourceCodePro-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SourceCodePro-Default'; /* Give your font a name */
+    src: url('./fonts/SourceCodePro-VariableFont_wght.ttf') format('truetype');
+}
+
+*{
+    font-family: 'SourceCodePro-Default';
+    background-color: #1f1f1f;
+    color: #bfbfbf;
+}
+
+ul{
+    list-style: none;
+}
+
+li::before {
+    content: ">>";  /* Add a bullet character (replace with your preferred symbol) */
+    color: rgb(135, 241, 126);   /* Set bullet color to green */
+    display: inline-block;  /* Allow for styling */
+    margin-left: -1em;  /* Adjust bullet position */
+    width: 1em;        /* Set bullet width */
+}
+  
+hr{
+    border: 1px solid #3a3a3a;
+    padding-top: 2px;
+    margin-top: 2px;
+}
+
+p{
+    color: #5db7e0;
+}
+
+h2{
+    color: #eb4034;
+    margin-bottom: 0px;
+}
+
+h3{
+    color: rgb(116, 223, 106);
+}
+
+.current-button {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 5px 5px 0cap rgba(179, 179, 179, 0.3);
+}
+  
+.current-button:hover {
+    transform: translateY(2px) translateX(2px); /* Moves button down slightly on hover */
+    box-shadow: none; /* Removes shadow on hover */
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em 0;
+}
+  
+.project-group {
+    flex: 1 0 40%;
+    margin: 0 1em 1em 0;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+  
+.project-group h3 {
+    margin-bottom: 0.5em;
+}
+  
+.project-group a {
+    text-decoration: none;
+    color: #5db7e0;
+}
+  
+.project-group a:hover {
+    color: #4a96b9;
+}
+
+.warning-box {
+    border: 1px solid #f7a439;
+    padding: 7px;
+    border-radius: 0px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.warning-box h2 {
+    color: #f7a439;
+    margin-bottom: 2px;
+    margin-top: 0px;
+}
