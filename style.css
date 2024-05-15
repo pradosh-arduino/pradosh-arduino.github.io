@@ -1,11 +1,36 @@
 @font-face {
-    font-family: 'SourceCodePro-Italics'; /* Give your font a name */
+    font-family: 'SourceCodePro-Italics';
     src: url('./fonts/SourceCodePro-Italic-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'SourceCodePro-Default'; /* Give your font a name */
+    font-family: 'SourceCodePro-Default';
     src: url('./fonts/SourceCodePro-VariableFont_wght.ttf') format('truetype');
+}
+
+span {
+    font: 700 20pt "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, .5);
+    background: url("./assets/animated-text-fill.png") repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes aitf {
+    0% {
+        background-position: 0% 50%;
+   }
+    100% {
+        background-position: 100% 50%;
+   }
 }
 
 *{
@@ -14,16 +39,20 @@
     color: #bfbfbf;
 }
 
+*::selection{
+    background-color: #3a3a3a;
+}
+
 ul{
     list-style: none;
 }
 
 li::before {
-    content: ">>";  /* Add a bullet character (replace with your preferred symbol) */
-    color: rgb(135, 241, 126);   /* Set bullet color to green */
-    display: inline-block;  /* Allow for styling */
-    margin-left: -1em;  /* Adjust bullet position */
-    width: 1em;        /* Set bullet width */
+    content: "#";
+    color: #87F17E;
+    display: inline-block;
+    margin-left: -1em;
+    width: 1em;
 }
   
 hr{
@@ -36,13 +65,21 @@ p{
     color: #5db7e0;
 }
 
+h1{
+    text-align: center;
+}
+
 h2{
     color: #eb4034;
     margin-bottom: 0px;
 }
 
 h3{
-    color: rgb(116, 223, 106);
+    color: #87F17E;
+}
+
+a {
+    color: #5db7e0;
 }
 
 .current-button {
@@ -56,21 +93,22 @@ h3{
 }
   
 .current-button:hover {
-    transform: translateY(2px) translateX(2px); /* Moves button down slightly on hover */
-    box-shadow: none; /* Removes shadow on hover */
+    transform: translateY(2px) translateX(2px);
+    box-shadow: none;
 }
 
 .project-container {
     display: flex;
     flex-wrap: wrap;
     margin: 1em 0;
+    margin-bottom: 0px;
 }
   
 .project-group {
     flex: 1 0 40%;
     margin: 0 1em 1em 0;
     padding: 1em;
-    border: 1px solid #ddd;
+    border: 1px solid #af4b4b;
     border-radius: 5px;
 }
   
@@ -89,8 +127,8 @@ h3{
 
 .warning-box {
     border: 1px solid #f7a439;
+    border-radius: 5px;
     padding: 7px;
-    border-radius: 0px;
     display: inline-block;
     margin-top: 10px;
 }
@@ -99,4 +137,35 @@ h3{
     color: #f7a439;
     margin-bottom: 2px;
     margin-top: 0px;
+}
+
+.neofetch-box{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    font-family: monospace;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.green{
+    color:#87F17E;
+    margin: 0;
+}
+
+.blue{
+    color:#5db7e0;
+}
+
+.red{
+    color:#eb4034;
 }
