@@ -8,6 +8,13 @@
     src: url('./fonts/SourceCodePro-VariableFont_wght.ttf') format('truetype');
 }
 
+@media only screen and (max-width: 768px) {
+    pre {
+      max-width: 100%; /* 100% for full width on mobile */
+    }
+  }
+  
+
 span {
     font: 700 20pt "Oswald", sans-serif;
     letter-spacing: 0;
