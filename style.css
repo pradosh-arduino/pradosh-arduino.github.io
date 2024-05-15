@@ -35,12 +35,18 @@ span {
 
 *{
     font-family: 'SourceCodePro-Default';
-    background-color: #1f1f1f;
+    /* background-color: #1f1f1f; */
     color: #bfbfbf;
 }
 
 *::selection{
     background-color: #3a3a3a;
+}
+
+body{
+    opacity: 1;
+    background: repeating-linear-gradient( 45deg, #1d1d1d, #1d1d1d 2px, #141414 5px, #141414 25px );
+    background-size: cover;
 }
 
 ul{
