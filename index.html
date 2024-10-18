@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="glitch.css">
+    <script src="./tabs.js"></script>
     <title>Hey there!</title>
 </head>
 <body>
+  <div class="tab">
+    <button class="tablinks" onclick="open_tab(event, 'About me')">About me</button>
+    <button class="tablinks" onclick="open_tab(event, 'Projects')">Projects</button>
+    <button class="tablinks" onclick="open_tab(event, 'Socials')">Socials</button>
+    <button class="tablinks" onclick="open_tab(event, 'Contact')">Contact</button>
+    <button class="tablinks" onclick="open_tab(event, 'Eula')">* Eula</button>
+  </div>
+  
   <h1><span >Hey welcome to my website!</span></h1>
   <hr>
   <pre class="neofetch-box">
@@ -31,6 +39,7 @@
       </div>
     </pre>
 
+    <div id="About me" class="tabcontent">
     <span>About me</span>
     <hr>
     <p>Hey there I'm Pradosh (also known as helloImPR)!</p>
@@ -58,8 +67,12 @@
       <li>Plethora of knowledge in electronics and hardware.</li>
       <br>
       <li>Have understanding of Quantum Computers.</li>
+      <br>
+      <li>An professional photographer.</li>
     </ul>    
-
+    </div>
+    
+    <div id="Projects" class="tabcontent">
     <span>Projects</span>
     <hr>
     <div class="project-container">
@@ -93,7 +106,9 @@
         </ul>
       </div>
     </div>
+    </div>
 
+    <div id="Socials" class="tabcontent">
     <span>Socials</span>
     <hr>
     <button class="current-button" style="background-color: #3d3d3d;" onclick="window.location.href='https://github.com/pradosh-arduino/'">Github</button>
@@ -102,8 +117,11 @@
     <button class="current-button" style="background-color: #4c9dfa;" onclick="window.location.href='https://discord.gg/m9rfJFAcpb'">Discord</button>
     <button class="current-button" style="background-color: #a05eeb;" onclick="window.location.href='https://www.twitch.tv/itspradoshgame'">Twitch</button>
     <button class="current-button" style="background-color: #fa5c5c;" onclick="window.location.href='https://prad-code.itch.io'">Itch.io</button>
-
+    
     <br><br>
+    </div>
+
+    <div id="Contact" class="tabcontent">
     <span>Contact</span>
     <hr>
     <p>
@@ -111,12 +129,42 @@
       <br>
       <img src="./icons/discord-48.png" alt="discord-icon" width="24" height="24" style="vertical-align: middle;"> <b style="color: #87F17E;">Discord :</b> helloimpr
     </p>
+    </div>
+
+    <div id="Eula" class="tabcontent">
+      <span>Website Content Ownership and Restrictions on Use (end-user license agreement)</span>
+      <hr>
+      <p>All content on this website, including text, graphics, logos, icons, images, audio clips, video clips, and software (collectively, the "Content") is the property of Pradosh 
+        or its licensors and is protected by copyright, trademark, and other intellectual property laws. You are granted a limited, non-exclusive, and non-transferable license to access and use the Content solely for personal and non-commercial purposes.</p>  
+        
+        <h3>You are expressly prohibited from:</h3>
+        
+        <ul>
+        <li>Copying, reproducing, modifying, translating, distributing, displaying, selling, leasing, or commercially exploiting any part of the Content without the prior written consent.</li>
+        <li>Creating derivative works based on the Content.</li>
+        <li>Reverse engineering, decompiling, or disassembling any software contained on the website or the website itself.</li>
+        <li>Framing or mirroring any part of the website.</li>
+        <li>Using the website or the Content for any illegal or unauthorized purpose.</li>
+        </ul>
+        
+        <p>Violation of these restrictions may result in legal action, including but not limited to, copyright infringement and trademark infringement claims.</p>
+    </div>
 
     <!-- <div class="warning-box">
       <h2><img src="./icons/warning-50.png" alt="warning-icon" width="40" height="40" style="vertical-align: middle;"> Warning</h2>
       <hr>
       <p>This website is still under development. Thank you for your time!</p>
     </div> -->
+    <script>
+      close_all_tabs();
+      open_tab(event, 'About me')
+    </script>
     <script src="./scaling.js"></script>
+
+    <hr>
+    <br>
+    <footer>
+      <div class="red">Copyright (C) Pradosh 2024</div>
+    </footer>
 </body>
 </html>

@@ -159,7 +159,7 @@ a {
     margin: 50px auto;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .green{
@@ -172,4 +172,42 @@ a {
 
 .red{
     color:#eb4034;
+}
+
+.tabcontent {
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    /* border-radius: 5px; */
+    background-color: #141414a1;
+    display: flex;
+    justify-content: center;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    /* border-radius: 5px; */
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #383838;
+    color: #5db7e0;
+}
+
+.tab button.active {
+    background-color: #666666;
 }
