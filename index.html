@@ -9,6 +9,13 @@
     <title>Hey there!</title>
 </head>
 <body>
+  <div id="preloader">
+    <div class="notice-box">
+      <h2><img src="./icons/info-48.png" alt="warning-icon" width="40" height="40" style="vertical-align: middle;"> Information</h2>
+      <hr>
+      <p>The website is currently loading. Please wait until it completes.</p>
+    </div> 
+  </div>
   <div class="tab">
     <button class="tablinks" onclick="open_tab(event, 'About me')">About</button>
     <button class="tablinks" onclick="open_tab(event, 'Projects')">Projects</button>
@@ -167,5 +174,7 @@
     <footer>
       <div class="red">Copyright (C) Pradosh 2024</div>
     </footer>
+
+    <script src="./loader.js"></script>
 </body>
 </html>
