@@ -8,10 +8,13 @@
     src: url('./fonts/SourceCodePro-VariableFont_wght.ttf') format('truetype');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@font-face {
+    font-family: 'Oswald-Bold';
+    src: url('./fonts/Oswald-Bold.ttf') format('truetype');
+}
 
 span {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald-Bold";
     font-weight: 700;
     font-size: 20pt;
     
