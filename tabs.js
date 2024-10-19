@@ -26,3 +26,7 @@ function close_all_tabs() {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 }
+
+function open_link(link){
+  window.location.href = link;
+}

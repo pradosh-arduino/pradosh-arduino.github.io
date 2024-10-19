@@ -247,3 +247,8 @@ a {
     width: 100%;
     position: fixed;
 }
+
+.tools a{
+    text-decoration: none;
+    color: #5db7e0;
+}
