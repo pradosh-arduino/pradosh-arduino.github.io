@@ -23,7 +23,7 @@ span {
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
 }
-
+  
 @keyframes aitf {
     0% {
         background-position: 0% 50%;
@@ -100,7 +100,7 @@ a {
     border: none;
     cursor: pointer;
     position: relative;
-    transition: transform 0.03s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0s ease-in-out, transform 0.03s ease-in-out;
     box-shadow: 5px 5px 0cap rgba(179, 179, 179, 0.3);
     margin-top: 10px;
 }
@@ -160,6 +160,18 @@ a {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 2px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor, 0 0 40px currentColor, 0 0 50px currentColor, 0 0 60px currentColor, 0 0 70px currentColor;
+    }
+    to {
+      text-shadow: 0 0 20px currentColor, 0 0 30px currentColor, 0 0 40px currentColor, 0 0 50px currentColor, 0 0 60px currentColor, 0 0 70px currentColor, 0 0 80px currentColor;
+    }
 }
 
 .green{
