@@ -198,13 +198,18 @@ a {
     /* border-radius: 5px; */
     background-color: #141414a1;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 .tab button {
     background-color: inherit;
     float: left;
     border: none;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
     /* border-radius: 5px; */
     outline: none;
     cursor: pointer;
@@ -218,5 +223,5 @@ a {
 }
 
 .tab button.active {
-    background-color: #666666;
+    background-color: #333333;
 }
