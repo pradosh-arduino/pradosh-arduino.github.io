@@ -9,12 +9,12 @@
 }
 
 @font-face {
-    font-family: 'Oswald-Bold';
+    font-family: 'Oswald-Boldx';
     src: url('./fonts/Oswald-Bold.ttf') format('truetype');
 }
 
 span {
-    font-family: "Oswald-Bold";
+    font-family: "Oswald-Boldx";
     font-weight: 700;
     font-size: 20pt;
     
