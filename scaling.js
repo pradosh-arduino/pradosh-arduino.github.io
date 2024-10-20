@@ -1,4 +1,5 @@
 const neofetchBox = document.querySelector('.neofetch-box');
+const landscapeModeInfo = document.querySelector('.landscape-info')
 
 function isMobileDevice() {
   const userAgent = navigator.userAgent;
@@ -9,8 +10,10 @@ function isMobileDevice() {
 function handleResize() {
   if (window.innerWidth <= 653) {
     neofetchBox.style.display = 'none';
+    landscapeModeInfo.style.display = 'block'
   } else {
     neofetchBox.style.display = 'block';
+    landscapeModeInfo.style.display = 'none'
   }
 }
 
@@ -20,6 +23,9 @@ handleResize();
 
 if (isMobileDevice()) {
   neofetchBox.style.display = 'none';
-} else {
+  landscapeModeInfo.style.display = 'block'
+} 
+else {
   neofetchBox.style.display = 'block';
+  landscapeModeInfo.style.display = 'none'
 }
