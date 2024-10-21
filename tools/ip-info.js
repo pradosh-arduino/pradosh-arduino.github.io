@@ -1,7 +1,7 @@
 function getIPInfo() {
   const infoDiv = document.getElementById("ipInfo");
 
-  fetch(`http://ip-api.com/json/?fields=66846719`)
+  fetch(`http://ip-api.com/json/`)
     .then(response => response.json())
     .then(data => {
       if (data.status === 'success') {
