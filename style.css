@@ -112,6 +112,7 @@ a {
     transition: box-shadow 0s ease-in-out, transform 0.03s ease-in-out;
     box-shadow: 5px 5px 0cap rgba(179, 179, 179, 0.3);
     margin-top: 10px;
+    transform: translate3d(0, 0, 0);
 }
   
 .current-button:hover {
@@ -194,6 +195,7 @@ a {
     border: 1px solid #ccc;
     border-radius: 2px;
     text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor, 0 0 40px currentColor, 0 0 50px currentColor, 0 0 60px currentColor, 0 0 70px currentColor;
+    transform: translate3d(0, 0, 0);
 }
 
 .green{
@@ -246,11 +248,13 @@ a {
     background-color: #383838;
     color: #5db7e0;
     text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor, 0 0 40px currentColor, 0 0 50px currentColor, 0 0 60px currentColor, 0 0 70px currentColor;
+    transform: translate3d(0, 0, 0);
 }
 
 .tab button.active {
     background-color: #333;
     text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor, 0 0 40px currentColor, 0 0 50px currentColor, 0 0 60px currentColor, 0 0 70px currentColor;
+    transform: translate3d(0, 0, 0);
 }
 
 #preloader{
@@ -273,4 +277,5 @@ a {
 
 a:hover{
     text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor, 0 0 40px currentColor, 0 0 50px currentColor, 0 0 60px currentColor, 0 0 70px currentColor;
+    transform: translate3d(0, 0, 0);
 }
