@@ -12,7 +12,12 @@ function open_tab(evt, subtitle) {
     }
   
     document.getElementById(subtitle).style.display = "block";
-    evt.currentTarget.className += " active";
+
+    if(evt != 0){
+      evt.currentTarget.className += " active";
+    }else if(evt == 0){
+      tablinks[0].className += " active";
+    }
 }
 
 function close_all_tabs() {
