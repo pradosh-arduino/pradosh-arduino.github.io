@@ -14,13 +14,22 @@
       <h2>Information!</h2>
       <hr>
       <p>The website is currently loading. Please wait until it completes.</p>
-    </div> 
+    </div>
   </div>
+
+  <audio id="keys" src="./assets/keystroke.mp3" preload="auto">
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+
+  <audio id="ui-positive" src="./assets/ui-positive2.mp3" preload="auto">
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+
   <div class="tab">
     <button class="tablinks" onclick="open_tab(event, 'About me')">About</button>
     <button class="tablinks" onclick="open_tab(event, 'Projects')">Projects</button>
     <button class="tablinks" onclick="open_tab(event, 'Socials')">Socials</button>
-    <button class="tablinks" onclick="open_link(event, '/tools.html')">Tools</button>
+    <button class="tablinks" onclick="open_tab(event, 'Tools')">Tools</button>
     <button class="tablinks" onclick="open_tab(event, 'Contact')">Contact</button>
     <button class="tablinks" onclick="open_tab(event, 'Eula')">* Eula</button>
   </div>
@@ -118,10 +127,6 @@
     </div>
     </div>
 
-    <audio id="keys" src="./assets/keystroke.mp3" preload="auto">
-      Your browser does not support the <code>audio</code> element.
-    </audio>
-
     <div id="Socials" class="tabcontent">
     <span>Socials</span>
     <hr>
@@ -133,6 +138,23 @@
     <button class="current-button" style="background-color: #fa5c5c;" onclick="window.location.href='https://prad-code.itch.io'">Itch.io</button>
     
     <br><br>
+    </div>
+
+    <div id="Tools" class="tabcontent">
+      <span>Tools</span>
+      <hr>
+      <br>
+      <h3>Click on the titles to view the respective pages.</h3>
+      <div class="tools">
+        <ul>
+            <li><a href="/tools/browser-info.html">Browser Information</a></li>
+            <li><a href="/tools/ip-info.html">IP Address Information</a></li>
+            <li><a href="/tools/dns-info.html">DNS Information</a></li>
+            <li><a href="/tools/benchmark.html">Device Benchmarks</a></li>
+            <li><i>Others are coming soon...</i></li>
+        </ul>
+        <br>
+      </div>
     </div>
 
     <div id="Contact" class="tabcontent">
