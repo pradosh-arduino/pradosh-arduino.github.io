@@ -174,10 +174,10 @@ a {
     display: inline-block;
     margin-top: 10px;
     text-align: center;
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 34%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
 }
 
 .notice-box h2 {
@@ -265,6 +265,15 @@ a {
     position: fixed;
 }
 
+#overlay{
+    background: #141414;
+    opacity: 0.8;
+    z-index: 100;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+
 .tools a{
     text-decoration: none;
     color: #5db7e0;
@@ -278,4 +287,42 @@ a {
 a:hover{
     transform: translate3d(0, 0, 0);
     text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor, 0 0 40px currentColor, 0 0 50px currentColor, 0 0 60px currentColor, 0 0 70px currentColor;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 128px;
+}
+
+#password-input{
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 20pt;
+    background: none;
+}
+
+#password-input:hover{
+    border: 1px solid #87F17E;
+    border-radius: 2px;
+}
+
+#keypad, #enter-button, #backspace-button {
+    padding: 10px;
+    background-color: #87F17E;
+    cursor: pointer;
+    font-size: 20pt;
+}
+
+#enter-button {
+    background-color: #5db7e0;
+}
+
+#backspace-button {
+    background-color: #f36156;
+}
+
+#exit-button {
+    background-color: #f36156;
 }

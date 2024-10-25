@@ -1,5 +1,15 @@
+var project_tab_pressed = 0;
+
 function open_tab(evt, subtitle) {
     var i, tabcontent, tablinks;
+
+    if(subtitle == "Projects") project_tab_pressed++;
+    else project_tab_pressed = 0;
+
+    if(project_tab_pressed >= 10){
+      open_overlay();
+      project_tab_pressed = 0;
+    }
   
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -40,4 +50,14 @@ function open_link(evt, link){
 
   evt.currentTarget.className += " active";
   window.location.href = link;
+}
+
+function open_overlay(){
+  const overlay = document.getElementById("overlay");
+  overlay.style.display = "block";
+}
+
+function close_overlay(){
+  const overlay = document.getElementById("overlay");
+  overlay.style.display = "none";
 }
