@@ -35,15 +35,20 @@ exitButton.addEventListener("click", () => {
 })
 
 enterButton.addEventListener("click", () => {
-    let hash = "";
-
+    const value = passwordInput.value;
     getHashString(passwordInput.value)
     .then((hash) => {
+            console.log(value + "->" + hash)
             if(hash == "cc668fd794ba55297e0fbb37ad3cb0ea2886fe7d93a4ff6a157b94b3e4297216"){
-                window.location.href = "/tools.html";
-            }else{
                 close_overlay();
-                console.warn("Nope thats not it!")
+                window.location.href = "/tools.html";
+            }
+            else if(hash == "be41b7f1fa56ba2b0582910053c86cf6ee7e311efc51300220df0918bb9a287b"){
+                window.location.href = "about:blank"
+            }
+            else{
+                close_overlay();
+                console.warn("Nope thats not it!");
             }
         }
     )
