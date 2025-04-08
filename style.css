@@ -15,7 +15,7 @@
 
 span {
     transform: translate3d(0, 0, 0);
-    
+
     font-family: "Oswald-Boldx";
     font-weight: 700;
     font-size: 26pt;
@@ -31,6 +31,7 @@ span {
     -webkit-text-fill-color: transparent;
     animation: aitf 80s linear infinite;
     backface-visibility: hidden;
+
 }
   
 @keyframes aitf {
@@ -52,15 +53,22 @@ span {
     background-color: #3a3a3a;
 }
 
-body{
+body {
     opacity: 1;
-    background: repeating-linear-gradient(
-        45deg,
-        #1d1d1d,
-        #1d1d1d 2px,
-        #141414 5px,
-        #141414 25px
-    );
+    background-image: url("./assets/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: backgroundAnimation 10s infinite alternate ease-in-out;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: center top;
+    }
+    100% {
+        background-position: center bottom;
+    }
 }
 
 ul{
@@ -196,6 +204,7 @@ a {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 2px;
+    background-color: #33333356;
     transform: translate3d(0, 0, 0);
     text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor, 0 0 40px currentColor, 0 0 50px currentColor, 0 0 60px currentColor, 0 0 70px currentColor;
 }
@@ -233,7 +242,7 @@ a {
 }
 
 .tab button {
-    background-color: inherit;
+    background-color: transparent;
     float: left;
     border: none;
     flex: 1;
@@ -254,7 +263,7 @@ a {
 }
 
 .tab button.active {
-    background-color: #333;
+    background-color: #33333381;
     transform: translate3d(0, 0, 0);
     text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor, 0 0 40px currentColor, 0 0 50px currentColor, 0 0 60px currentColor, 0 0 70px currentColor;
 }
@@ -333,4 +342,23 @@ a:hover{
 
 #exit-button {
     background-color: #f36156;
+}
+
+.tab-icons {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.tablinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
