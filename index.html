@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./icons/simba-x.png">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="./tabs.js"></script>
+    <script src="./scripts/tabs.js"></script>
     <title>Hey there!</title>
 </head>
 <body>
@@ -16,6 +16,8 @@
       <p>The website is currently loading. Please wait until it completes.</p>
     </div>
   </div>
+
+  <canvas id="bg-canvas"></canvas>
 
   <div id="overlay">
     <input readonly type="password" id="password-input" placeholder="Enter your password">
@@ -115,7 +117,7 @@
       <li>Have understanding of Quantum Computers.</li>
       <br>
       <li>An professional photographer.</li>
-    </ul>    
+    </ul>
     </div>
     
     <div id="Projects" class="tabcontent">
@@ -169,7 +171,7 @@
     <div id="Blogs" class="tabcontent">
       <span>Blogs</span>
       <hr>
-      <p>Here are some blogs that I wrote!</p>
+      <p>Here are some blogs that I have written!</p>
       <ul>
         <li><a href="https://dev.to/pradcode/expanding-swap-file-4h71">dev.to - Expanding swap file</a></li>
         <li><a href="https://dev.to/pradcode/better-input-method-for-c-4hnb">dev.to - Better input method for C#</a></li>
@@ -185,7 +187,7 @@
     <button class="current-button" style="background-color: #4c9dfa;" onclick="window.location.href='https://discord.gg/m9rfJFAcpb'">Discord</button>
     <button class="current-button" style="background-color: #a05eeb;" onclick="window.location.href='https://www.twitch.tv/itspradoshgame'">Twitch</button>
     <button class="current-button" style="background-color: #fa5c5c;" onclick="window.location.href='https://prad-code.itch.io'">Itch.io</button>
-    
+    <button class="current-button" style="background-color: #4e4bf0;" onclick="window.location.href='https://gravatar.com/pradcode'">Gravatar</button>
     <br><br>
     </div>
 
@@ -235,22 +237,18 @@
         <p>Violation of these restrictions may result in legal action, including but not limited to, copyright infringement and trademark infringement claims.</p>
     </div>
 
-    <!-- <div class="warning-box">
-      <h2><img src="./icons/warning-50.png" alt="warning-icon" width="40" height="40" style="vertical-align: middle;"> Warning</h2>
-      <hr>
-      <p>This website is still under development. Thank you for your time!</p>
-    </div> -->
-    <script src="./startup.js"></script>
-    <script src="./scaling.js"></script>
-    <script src="./sounds.js"></script>
-    <script src="./keypads.js"></script>
-
+    <script src="./scripts/startup.js"></script>
+    <script src="./scripts/scaling.js"></script>
+    <script src="./scripts/sounds.js"></script>
+    <script src="./scripts/keypads.js"></script>
+    <script src="./scripts/particles.js"></script>
+    
     <hr>
     <br>
     <footer>
       <div class="red">Copyright (C) Pradosh 2025</div>
     </footer>
 
-    <script src="./loader.js"></script>
+    <script src="./scripts/loader.js"></script>
 </body>
 </html>

@@ -23,6 +23,8 @@ function open_tab(evt, subtitle) {
   
     document.getElementById(subtitle).style.display = "block";
 
+    resizeCanvas() // Located in particles.js
+
     if(evt != 0){
       evt.currentTarget.className += " active";
     }else if(evt == 0){

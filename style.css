@@ -1,16 +1,11 @@
 @font-face {
-    font-family: 'SourceCodePro-Italics';
-    src: url('./fonts/SourceCodePro-Italic-VariableFont_wght.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'SourceCodePro-Default';
-    src: url('./fonts/SourceCodePro-VariableFont_wght.ttf') format('truetype');
-}
-
-@font-face {
     font-family: 'Oswald-Boldx';
     src: url('./fonts/Oswald-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cartograph';
+    src: url('./fonts/cartograph-mono-cf-bold.otf') format('truetype');
 }
 
 span {
@@ -44,13 +39,17 @@ span {
 }
 
 *{
-    font-family: 'SourceCodePro-Default';
+    font-family: 'Cartograph';
     /* background-color: #1f1f1f; */
     color: #bfbfbf;
 }
 
 *::selection{
-    background-color: #3a3a3a;
+    background-color: #3a3a3a4f;
+}
+
+*:hover{
+    cursor: default;
 }
 
 body {
@@ -222,10 +221,10 @@ a {
 }
 
 .tabcontent {
-    animation: fadeEffect 1s;
+    animation: fade_in 1s;
 }
 
-@keyframes fadeEffect {
+@keyframes fade_in {
     from {opacity: 0;}
     to {opacity: 1;}
 }
@@ -284,6 +283,13 @@ a {
     width: 100%;
     position: fixed;
     display: none;
+}
+
+#bg-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .tools a{
