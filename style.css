@@ -14,6 +14,8 @@
 }
 
 span {
+    transform: translate3d(0, 0, 0);
+    
     font-family: "Oswald-Boldx";
     font-weight: 700;
     font-size: 26pt;
@@ -28,7 +30,6 @@ span {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: aitf 80s linear infinite;
-    transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
 }
   
