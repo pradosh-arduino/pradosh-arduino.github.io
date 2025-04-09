@@ -30,6 +30,15 @@ function open_tab(evt, subtitle) {
     }else if(evt == 0){
       tablinks[0].className += " active";
     }
+
+    if(evt != 0){
+      document.getElementById(subtitle).scrollIntoView({ behavior: 'smooth'});
+    }
+}
+
+function scroll_to_top(){
+  const element = document.getElementById("header");
+  element.scrollIntoView({ behavior: 'smooth'});
 }
 
 function close_all_tabs() {

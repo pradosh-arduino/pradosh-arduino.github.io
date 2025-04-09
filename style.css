@@ -53,7 +53,6 @@ span {
 }
 
 body {
-    opacity: 1;
     background-image: url("./assets/bg.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -387,4 +386,24 @@ a:hover{
     padding: 0;
     object-fit: cover;
     border-radius: 7px;
+}
+
+#scroll-to-top {
+    text-align: right;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#scroll-to-top{
+    text-align: right;
+}
+
+code {
+    background-color: #141414a1;
+    padding: 2px 5px;
+    border-radius: 5px;
 }
