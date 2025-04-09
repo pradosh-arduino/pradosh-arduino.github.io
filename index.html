@@ -59,7 +59,7 @@
     <button class="tablinks" onclick="open_tab(event, 'Eula')"><img class="tab-icons" src="./icons/tab-icons/memo-50.png" alt="Eula"> Eula</button>
   </div>
   
-  <h1><span>👋  Hey welcome to my website!</span></h1>
+  <h1><span>Hey welcome to my website!</span></h1>
   <hr>
   <h3 class="landscape-info" style="text-align: center;">Switch to landscape mode for a fun neofetch box!</h3>
   <pre class="neofetch-box">
@@ -73,14 +73,16 @@
  ::-=+=-:................:::::    <a class="blue">Code Editor:</a> vscode
  .::-=++-:::::......::......::    <a class="blue">Pet's name:</a> Simba
  .::::--::---+-.....=++:......    <a class="blue">IP Address:</a> 127.0.0.1
- .:::-::--=+##=.............::    <a class="blue">Fav Lang:</a> C#, JS, Gleam
+ .:::-::--=+##=.............::    <a class="blue">Fav Lang:</a> C#, JS, Java
   :.:--::=+++=--==++:.........    <a class="blue">Spirit Animal :</a> Bear!
  ...:-----====-*@@%#-.........
  ..::-----++====+*%*=::-......
 ..:::::---+++*+++**+=-::::....
 ::::::::-=++**+====--::::.....    <a class="red">██</a><a class="green">██</a><a class="blue">██</a>
 :-::-::::-=======-:::::::.....
-      </div>
+
+<a class="green">>></a> <a class="blue" id="cursor">_</a>
+</div>
     </pre>
 
     <div id="About me" class="tabcontent">
@@ -262,10 +264,34 @@
       <span>Blogs</span>
       <hr>
       <p>Here are some blogs that I have written!</p>
-      <ul>
-        <li><a href="https://dev.to/pradcode/expanding-swap-file-4h71">dev.to - Expanding swap file</a></li>
-        <li><a href="https://dev.to/pradcode/better-input-method-for-c-4hnb">dev.to - Better input method for C#</a></li>
-      </ul>
+
+      
+      <div class="project-container">
+        <div class="project-group">
+          <img class="blog-image" src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fz7hz8gbu9ekhufkvrfkx.png" alt="expanding-fs-banner">
+          <h3>Expanding Swapfiles</h3>
+          <hr>
+          <p>In this blog I simply covered how to expand swap if it is stored as a file in root partition of Linux.</p>
+          <hr>
+          <h4>Links : </h4>
+          <ul>
+            <li>Blog Post ➔ <a href="https://dev.to/pradcode/expanding-swap-file-4h71">https://dev.to/pradcode/expanding-swap-file-4h71</a></li>
+          </ul>
+        </div>
+  
+        <div class="project-group">
+          <img class="blog-image" src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fh6qkzeyrtdnyarp9jvhr.png" alt="expanding-fs-banner">
+          <h3>Better input method for C#</h3>
+          <hr>
+          <p>In this blog I covered about my buffer package, how it is being used, discovery of problem, solutions and example syntaxes.</p>
+          <hr>
+          <h4>Links : </h4>
+          <ul>
+            <li>Blog Post ➔ <a href="https://dev.to/pradcode/better-input-method-for-c-4hnb">https://dev.to/pradcode/better-input-method-for-c-4hnb</a></li>
+          </ul>
+        </div>
+
+      </div>
     </div>
 
     <div id="Socials" class="tabcontent">
@@ -332,13 +358,15 @@
     <script src="./scripts/sounds.js"></script>
     <script src="./scripts/keypads.js"></script>
     <script src="./scripts/particles.js"></script>
-    
+    <script src="./scripts/cursor-blink.js"></script>
+
     <hr>
     <br>
     <footer>
-      <div class="red">Copyright (C) Pradosh 2025</div>
+      <div class="red" id="copyright"></div>
     </footer>
 
+    <script src="./scripts/copyright.js"></script>
     <script src="./scripts/loader.js"></script>
 </body>
 </html>

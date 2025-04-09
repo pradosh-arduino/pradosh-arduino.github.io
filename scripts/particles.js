@@ -3,7 +3,14 @@ const ctx = canvas.getContext("2d");
 
 let width, height;
 let particles = [];
-const particleCount = 120;
+
+
+let particleCount = 120;
+
+if(isMobileDevice()){
+  particleCount = 60;
+}
+
 const maxDistance = 120;
 const mouse = { x: null, y: null };
 

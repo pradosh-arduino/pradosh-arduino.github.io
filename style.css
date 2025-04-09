@@ -83,7 +83,8 @@ li::before {
 }
   
 hr{
-    border: 1px solid #3a3a3a;
+    border: 1px solid #444444;
+    border-radius: 7px;
     padding-top: 2px;
     margin-top: 2px;
     margin-bottom: 0px;
@@ -135,8 +136,9 @@ a {
 .project-container {
     display: flex;
     flex-wrap: wrap;
-    margin: 1em 0;
+    margin: 0;
     margin-bottom: 0px;
+    padding: 0;
 }
   
 .project-group {
@@ -210,7 +212,7 @@ a {
     margin: 50px auto;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 2px;
+    border-radius: 7px;
     background-color: #33333356;
     transform: translate3d(0, 0, 0);
     text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor, 0 0 40px currentColor, 0 0 50px currentColor, 0 0 60px currentColor, 0 0 70px currentColor;
@@ -240,7 +242,7 @@ a {
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    /* border-radius: 5px; */
+    border-radius: 7px;
     background-color: #141414a1;
     display: flex;
     flex-wrap: wrap;
@@ -255,7 +257,6 @@ a {
     flex: 1;
     text-align: center;
     padding: 10px;
-    /* border-radius: 5px; */
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
@@ -313,6 +314,7 @@ a {
 a:hover{
     text-shadow: 0 0 5px currentColor, 0 0 7px currentColor, 0 0 12px currentColor, 0 0 15px currentColor;
     transform: translate3d(0, 0, 0);
+    cursor: pointer;
 }
 
 .button-grid {
@@ -375,4 +377,14 @@ a:hover{
     outline: none;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.blog-image {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    object-fit: cover;
+    border-radius: 7px;
 }
